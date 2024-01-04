@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Difference b/w Slice and Substring
+        //if we given same parameters {ex-8,8}it will return empty string
+        var str="Lokesh"
+        console.log("slice:"+str.slice(8,8))
+        var Substring="Lokesh"
+        console.log("Substring:"+str.substring(9,9));
+        //if we give start argument as greater than end argument slice can return empty string
+        var str="Lokesh"
+        console.log("given grater element at start:"+str.slice(5,2));
+        //if we give start argument as greater than end argument Substring can 
+        // return swap the end one to start argumemt
+        var str="Nani"
+        console.log("Swap End argument to Start argument:-> "+str.substring(5,2));
+        //Slice can take the arguments as negative values it starts from right 
+        // whereas substring can't take the nagative values
+        var str="Lokesh Vemana"
+        console.log("Slice:->"+str.slice(7,-3));
+        console.log("Slice:->"+str.slice(-4,-3));
+        console.log("Slice:->"+str.slice(3,6));
+        //can acccept both negative & positive values
+        var str='Lokesh Vemana'
+        console.log("Substing->"+str.substring(0,7))
+        console.log("Substing-> Can't see any result if values are in negative"+str.substring(0,-7))
+    </script>
+</body>
+</html>
