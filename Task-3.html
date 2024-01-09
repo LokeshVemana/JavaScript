@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbersArr= [3, 10, 4, 21, 5, 9, 2, 6, 5, 3, 5];
+numbersArr.sort((a, b) => a - b);
+console.log(numbersArr); // Output: [2,3,3,4,5,5,5,6,9,10,21]
+
+// Descending Order
+numbersArr.sort((a, b) => b - a);
+console.log(numbersArr); // Output: [21,10,9,6,5,5,5,4,3,3,2]
+    </script>
+  </body>
+</html>
