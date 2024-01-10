@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Task2 Remove The Dublicate elements And Print Array
+      debugger;
+      let arr = [1, 2, 1, 3, 2, 4, 3, 5];
+      let array1 = [];
+      for (i = 0; i < arr.length; i++) {
+        if (array1.indexOf(arr[i]) === -1) {
+          array1.push(array[i]);
+        }
+      }
+      console.log("Array in without dublicates " + array1);
+
+      //count of duplicates
+      let array = [9, 4, 4, 0, 6, 6, 7, 3, 5, 1]; //Intialization of array
+      for (i = 0; i < array.length; i++) {
+        // iterates through each element in the array.
+        let count = 1;
+        // Check if the current element is not marked as a duplicate
+        if (array[i] !== -1) {
+          // If the current element is not marked as a duplicate, the inner loop starts from the next element to compare with the current one.
+          for (j = i + 1; j < array.length; j++) {
+            // Check if a duplicate is found
+            if (array[i] == array[j]) {
+              count++;
+              array[j] = -1; // Mark the duplicate element to avoid counting it again
+            }
+          }
+          // If the count is greater than 1, print the element and its occurrence count
+          if (count > 1) {
+            console.log(array[i], ":", count, "times");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
